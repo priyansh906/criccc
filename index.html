@@ -48,7 +48,7 @@
         if (Hls.isSupported()) {
           var hls = new Hls();
           hls.loadSource(
-            "https://us.score806.cc/us_willow/index.m3u8"
+            "https://sports.lvyclv.com/live/m33386232/playlist.m3u8"
           );
           hls.attachMedia(video);
           hls.on(Hls.Events.MANIFEST_PARSED, function () {
@@ -56,7 +56,7 @@
           });
         } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
           video.src =
-            "https://us.score806.cc/us_willow/index.m3u8";
+            "https://sports.lvyclv.com/live/m33386232/playlist.m3u8";
           video.addEventListener("canplay", function () {
             video.play();
           });
